@@ -5,115 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGV cultureplex</title>
- 
     <link rel="icon" href="./icons/favicon.ico">
     <!-- 리셋 -->
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
-
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
     <!-- 구글 아이콘 -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- gsap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-       
-        
-
 
       <!-- 벤더프리픽스 -->
       <script src="./script/prefixfree.min.js"></script>
-   
-      <!-- 메인 javascript -->
-      <script defer src="./script/main.js"></script>
+
       <!-- 제이쿼리 라이브러리 -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-      <script src="./script/slick.js"></script>
-      <!-- 랩퍼 -->
 
-      <style>
-        h2>img{
-            width: 150px;
-        position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }        
-        .inner{
-            position: relative;
-            top:50px;
-            width: 356px;
-            margin: 0px auto;
-        }
-.login{
-    position: absolute;
-    top: 100px;
-width: 350px;
-height: 45px;
-background-color: #ccc;
-color:#fff;
-border: 1px solid #333;
-display: block;
-text-indent: 5px;
-}
-.pw{
-    text-indent: 5px;
-    position: absolute;
-    top: 153px;
-width: 350px;
-height: 45px;
-background-color: #ccc;
-color: #fff;
-border: 1px solid #333;
-display: block;
-}
-
-.log_btn{
-    position: absolute;
-    top: 249px;
-    left: 50%;
-    transform: translateX(-50%);
-width: 360px;
-height: 55px;
-background-color: #ED3124;
-color: #fff;
-border: 1px solid #ed3124;
-font-size: 20px;
-display: block;
-
-
-}
-.wrap_login{
-    width: 100%;
-
-
-}
-.more{
-    position: relative;
-    top: 320px;
-
-    font-size: 13px;
-
-}
-
-.more a{
-    text-decoration: none;
-    color: #333;
-}
-.more a::after{
-    content:"";
-    width: 1px;
-    height: 13px;
-    background-color: #333;
-    color: #333;
-    position: absolute;
-    top: 1px;
-    
-
-}
-.more a:last-child::after{
-    display: none;
-}
-
-    </style>
       <script>
         $(document).ready(function(){
 
@@ -154,6 +61,176 @@ display: block;
 
        
       </script>
+      <!-- 랩퍼 -->
+
+      <style>
+        .wrap_login h2>img{
+            width: 150px;
+        position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }        
+        .inner1{
+
+            position: relative;
+            top:50px;
+            width: 356px;
+            margin: 0px auto;    z-index: -20;
+        }
+.login{
+    position: absolute;
+    top: 100px;
+width: 350px;
+height: 45px;
+background-color: #fff;
+color:#333;
+border: 1px solid rgb(78, 78, 78);
+display: block;
+text-indent: 7px;
+}
+.pw{
+    text-indent: 7px;
+    position: absolute;
+    top: 153px;
+width: 350px;
+height: 45px;
+background-color: #fff;
+color:#333;
+border: 1px solid rgb(78, 78, 78);
+display: block;
+}
+.pw:focus{
+color: #333;
+}
+
+.log_btn{
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+width: 360px;
+height: 55px;
+background-color: #ED3124;
+color: #fff;
+border: 1px solid #ed3124;
+font-size: 20px;
+display: block;
+
+
+}
+.wrap_login{
+    width: 100%;
+    z-index: -20;
+
+
+}
+.more1{
+    position: relative;
+    top: 300px;
+
+    font-size: 13px;
+
+}
+
+.more1 a{
+    text-decoration: none;
+    color: #333;
+}
+.more1 a::after{
+    content:"";
+    width: 1px;
+    height: 13px;
+    background-color: #333;
+    color: #333;
+    position: absolute;
+    top: 1px;
+    
+
+}
+.more1 a:last-child::after{
+    display: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+.more2{
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+}
+.wrap_login p {
+    margin: 0px auto;
+   text-align: center;
+  transform: translateY(360px);
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wrap_login p::after{
+    content: "";
+    width: 130px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 12px;
+    right: -40px;
+}
+.wrap_login p::before{
+    content: "";
+    width: 130px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 12px;
+    left: -40px;
+}
+.more2 a img{
+    border-radius: 50%;
+    width: 40px;
+    margin: 0px 5px;
+}
+    </style>
+      <script>
+        $(document).ready(function(){
+
+
+            $('.contents').hide();
+
+          
+            $('.main-menu').mouseenter(function(){
+             $('.contents').stop().slideDown(280);
+
+
+      
+            });
+
+        $('.main-menu').mouseleave(function(){
+            $('.contents').stop().slideUp();
+
+
+        });
+        $('.contents').mouseenter(function(){
+            $(this).stop().show();
+        })
+        $('.contents').mouseleave(function(){
+            $(this).slideUp();
+        })
+
+
+   
+
+
+  });
+  
+
+       
+      </script>
 
 
 
@@ -161,20 +238,63 @@ display: block;
     <?include 'header.php'?>
     <main>
 <section class="wrap_login">
-<div class="inner">
+<div class="inner1">
    <h2><img src="./img/logo.png" alt=""></h2>
    <input type="text" placeholder="이메일주소 혹은 ID" class="login">
    <input type="password" name="" id="" placeholder="비밀번호" class="pw">
    <input type="submit" id="" value="로그인" class="log_btn">
-<div class="more">
+<div class="more1">
    <a href="#">비밀번호 찾기&nbsp;</a>
    <a href="#"> &nbsp;ID찾기 </a>
    <a href="#"> &nbsp;회원가입 </a>
+</div>
+<p>간편하게 로그인하기</p>
+<div class="more2">
+<a href=""><img src="./icons/facebook.png" alt=""></a>
+<a href=""><img src="./icons/kakaotalk.png" alt=""></a>
+<a href=""><img src="./icons/naver.png" alt=""></a>
 </div>
 </div>
 
 </section>
     </main>
-
-    <?include 'footer.php'?>
-  
+    <!-- 푸터영역 -->
+<footer>
+    <div class="inner">
+        <ul class="menu">
+            <li><a href="javascript:void(0)" class="orange">(주)빙그레</a></li>
+            <li><a href="javascript:void(0)">회사소개</a></li>
+            <li><a href="javascript:void(0)">IR</a></li>
+            <li><a href="javascript:void(0)">채용정보</a></li>
+            <li><a href="javascript:void(0)">광고/제휴/출점문의</a></li>
+            <li><a href="javascript:void(0)">이용약관</a></li>
+            <li><a href="javascript:void(0)">편성기준</a></li>
+            <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+            <li><a href="javascript:void(0)">법적고지</a></li>
+            <li><a href="javascript:void(0)">이메일주소무단수집거부</a></li>
+            <li><a href="javascript:void(0)">윤리경영</a></li>
+            <li><a href="javascript:void(0)">사이버감사실</a></li>
+        </ul>
+    <div class="footer_b">
+        <address>
+    (04377) 서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)
+    <br>대표이사 : 허민회<br>
+    사업자등록번호 : 104-81-45690>
+    통신판매업신고번호 : 2017-서울용산-0662<br>
+    호스팅사업자
+    CJ올리브네트웍스
+    개인정보보호 책임자
+    심준범<br>
+    대표이메일
+    cjcgvmaster@cj.net<br>
+    © CJ CGV. All Rights Reserved
+        </address><a href="javascript:void(0)">
+        <img src="./img/logo.png" alt="">
+    </a>    
+    </div>
+    </div>
+    
+    </footer>
+<!-- 
+    <?include ("footer.php")?> -->
+  <body>

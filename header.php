@@ -85,7 +85,7 @@
 <header>
 <div class="inner">
     <div class="sub-wrapper">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
         <img src="./img/logo.png" alt="cgv">
     </a>
     <div class="sub-menu">

@@ -407,19 +407,24 @@ top: 40%;
    border: none;
    border-radius: 4px;
    transition: .3s ease-in;
+
+   font-family: 'Nanum Gothic';
 }
 
 
 .btn_top{
     width: 132px;
-    height: 35px;
+    height: 40px;
 font-size: 18px;
+font-weight: 600;
+
 }
 .btn_top:first-child{
     color: #fff;
     margin-right: 6px;
     background-color: #361B18;
     transition: .3s ease-in;
+    
 }
 .btn_top:first-child:hover{
     background-color: transparent;
@@ -428,7 +433,7 @@ font-size: 18px;
 }
 .btn_bottom{
     width: 275px;
-    height: 35px;
+    height: 40px;font-weight: 600;
     margin-top: 7px ;
     font-size: 18px;
 }
@@ -589,8 +594,15 @@ position: relative;
     color: #f6f5ef;
     border-radius: 25px;
     font-size: 16px;
+    transition: 0.3s;
+    
 }
-
+.promotion .swiper-slide .btn:hover{
+    background-color: transparent;
+    border: 3px solid #BA261C;
+    color: #BA261C;
+    font-weight: 700;
+}
 .promotion .swiper-pagination{
 bottom: 20px !important;
 z-index: 1;
@@ -741,7 +753,7 @@ font-size: 26px;
    left: 0px;
    background-color: transparent;
 }
-.ticket .more .btn {
+.ticket .inner .more a.btn {
     width: 100px;
     height: 33px;
     display: block;
@@ -751,9 +763,9 @@ font-size: 26px;
 color: rgb(255, 255, 255);
 line-height: 33px;
 font-size: 18px;
-transition: .3s;
+transition: 0.3s;
 }
-.ticket .more .btn:hover{
+.ticket .inner .more a.btn:hover{
     background-color: #f6f5ef;
     color: #333;
 

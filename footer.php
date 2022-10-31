@@ -1,4 +1,48 @@
 
+
+
+    <section>
+    <div class="footer_banner">
+        <img src="./img/banner.png" alt="">
+    </div>
+</section>
+
+<section class="awards">
+<div class="inner">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./icons/cj01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj02.png" alt="" id="olive">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj03.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj04.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj05.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj06.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev">
+        <span class="material-icons">arrow_back</span>
+    </div>
+    <div class="swiper-button-next">
+        <span class="material-icons">arrow_forward</span>
+    </div>
+</div>
+</section>
+</main>
+
+
+
 <!-- 푸터영역 -->
 <footer>
 <div class="inner">
