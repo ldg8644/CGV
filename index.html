@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV cultureplex</title>
+    <link rel="icon" href="./icons/favicon.ico">
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- 슬릭 슬라이더 -->
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/slick-theme.css">
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- swiepr js -->
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+      <!-- 벤더프리픽스 -->
+      <script src="./script/prefixfree.min.js"></script>
+      <!-- 스크롤 매직 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- 메인 javascript -->
+      <script defer src="./script/main.js"></script>
+      <!-- 제이쿼리 라이브러리 -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="./script/slick.js"></script>
+      <!-- 랩퍼 -->
+      <script>
+        $(document).ready(function(){
+
+
+            $('.contents').hide();
+
+          
+            $('.main-menu').mouseenter(function(){
+             $('.contents').stop().slideDown(280);
+
+
+      
+            });
+
+        $('.main-menu').mouseleave(function(){
+            $('.contents').stop().slideUp();
+
+
+        });
+        $('.contents').mouseenter(function(){
+            $(this).stop().show();
+        })
+        $('.contents').mouseleave(function(){
+            $(this).slideUp();
+        })
+
+        $('.m_slide').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5
+    });
+   
+   
+
+
+  });
+  
+
+       
+      </script>
+</head>
+<body>
+    <!-- 헤더영역 -->
+<header>
+<div class="inner">
+    <div class="sub-wrapper">
+    <a href="#" class="logo">
+        <img src="./img/logo.png" alt="cgv">
+    </a>
+    <div class="sub-menu">
+        <ul class="menu">
+            <li>
+                <a href="/login">
+                    <img src="./icons/login.png" alt="" class="icons">
+                    로그인
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="./icons/signup.png" alt="" class="icons">
+                   회원가입
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="./icons/Mycgv.png" alt="" class="icons">
+                    MY CGV
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <img src="./icons/Customer.png" alt="" class="icons">
+                    고객센터
+                </a>
+            </li>
+        </ul>
+        <div class="search">
+            <input type="text">
+            <i class="material-icons">search</i>
+        </div>
+    </div>
+    </div>
+    <!-- 메인메뉴 -->
+
+
+    <div class="gnb">
+    <div class="gnb_inner">
+        <ul class="main-menu">
+            <li><a href=""> 영화</a></li>
+            <li><a href="">극장</a></li>
+            <li><a href="">예매</a></li>
+            <li><a href="">스토어</a></li>
+            <li><a href="">이벤트</a></li>
+            <li><a href="">혜택</a></li>
+       
+        </ul>
+    </div>
+        <div class="contents">
+            <div>
+                <ul>
+                    <li id="list-wrapper">
+                        <ul class="list">
+                            <li>영화</li>
+                            <li>무비차트</li>
+                            <li>아트하우스</li>
+                            <li>ICECON</li>
+                            
+                        </ul>
+                        <ul class="list">
+                            <li>극장</li>
+                            <li>CGV 극장</li>
+                            <li>특별관</li>
+                        </ul>
+                        <ul class="list">
+                            <li>예매</li>
+                            <li>빠른예매</li>
+                            <li>상영스케줄</li>
+                            <li>English Ticketing</li>
+                            <li>English Schedule</li>
+                        </ul>
+                        <ul class="list">
+                            <li>스토어</li>
+                            <li>영화관람권</li>
+                            <li>기프트카드</li>
+                            <li>콤보</li>
+                            <li>팝콘</li>
+                            <li>음료</li>
+                            <li>스낵</li>
+                            <li>플레이존</li>
+                            <li>씨네샵</li>
+                        </ul>
+                        <ul class="list">
+                            <li>이벤트</li>
+                            <li>SPECIAL</li>
+                            <li>영화/예매</li>
+                            <li>멤버십/CLUB</li>
+                            <li>CGV 극장별</li>
+                            <li>제휴할인</li>
+                            <li>당첨자 발표</li>
+                            <li>종료된 이벤트</li>
+                        </ul>
+                        <ul class="list">
+                            <li>혜택</li>
+                            <li>CGV 할인정보</li>
+                            <li>CLUB 서비스</li>
+                            <li>VIP 라운지</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+            
+<!-- 메인영역 -->
+
+<!-- 비주얼 영상  -->
+
+<div class="video-wrapper">
+    <h2>극장판 검정고무신 : 즐거운 나의 집</h2>
+    <p>우여곡절 기철이의 첫 아르바이트!?</p>
+    <div class="more"><a href="#">상세보기</a></div>
+    <i class="fa fa-play" id="btnPlay"></i>
+    <i class="fa fa-pause" id="btnPause"></i>
+    <div class="movie">
+    <video src="./videos/video01.mp4" class="movie-video">
+    </video>
+    
+</div>
+
+</div>
+<!-- 영화차트 슬라이더 -->
+
+
+<section class="slide_wrap scroll-spy">
+    <h2 class="movie-chart back-to-position to-right2 delay-1">무비차트</h2>
+<div class="m_slide back-to-position to-right2 delay-2   ">
+    <div>
+        <img src="./img/poster01.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+
+        </div>
+        <p class="m_title">1. 아바타 리마스터링
+        </p>
+        <p class="m_txt">예매율 18.5%</p>
+    </div>
+    <div>
+        <img src="./img/poster02.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+
+        </div>
+        <p class="m_title">2. 정직한 후보2
+        </p>
+         <p class="m_txt">예매율18.0</p>
+    </div>
+    <div>
+        <img src="./img/poster03.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+
+        </div>
+        <p class="m_title">3. 인생은 아름다워
+        </p>
+        <p class="m_txt">예매율 14.1%</p>
+    </div>
+    <div>
+        <img src="./img/poster04.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+
+        </div>
+        <p class="m_title">4. 공조2-인터내셔날
+        </p>  
+        <p class="m_txt"> 예매율 10.6%</p>
+    </div>
+    <div>
+        <img src="./img/poster05.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+
+        </div>
+        <p class="m_title setting">5. 헬로카봇-<br>수상한 마술단의 비밀
+        </p>
+        <p class="m_txt">예매율 8.6%</p>
+    </div>
+    <div>
+        <img src="./img/poster06.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+
+        </div>
+        <p class="m_title setting">6. 짱구는 못말려-<br> 꽃피는 천하떡잎학교
+        </p>
+        <p class="m_txt">예매율 7.8%</p>
+    </div>
+    <div>
+        <img src="./img/poster07.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+
+        </div>
+        <p class="m_title">7. 늑대사냥
+        </p>
+        <p class="m_txt">예매율 5.7%</p>
+    </div>
+    <div>
+        <img src="./img/poster08.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+ 
+        </div>
+        <p class="m_title setting">8. 물방울을 그리는 <br>남자
+              
+        </p>
+        <p class="m_txt">예매율 5.1%</p>
+    </div>
+    <div>
+        <img src="./img/poster09.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+            
+        </div>
+        <p class="m_title">9. 엑스칼리버
+               
+        </p>
+        <p class="m_txt"> 예매율 5.0%</p>
+    </div>
+    <div>
+        <img src="./img/poster10.jpg" alt="">
+        <div class="btn_wrap">
+            <input type="button" value="자세히보기" class="detail_btn">
+            <input type="button" value="예매하기" class="reserve_btn">
+            
+        </div>
+        <p class="m_title setting">10. 캡틴아메리카 <br>윈터솔져
+                
+        </p>
+        <p class="m_txt">예매율 4.8%</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="kakao">
+
+
+    <div class="bg">
+        <div class="kakao_wrap">
+        <input type="button" value="회원가입" class="btn_top">
+        <input type="button" value="로그인" class="btn_top">
+        <input type="button" value="더많은 혜택 보러가기" class="btn_bottom">
+        </div>
+    </div>
+</section>
+
+<!-- notice -->
+<section class="notice">
+<div class="bg-left"></div>
+<div class="bg-right"></div>
+<div class="inner">
+    <div class="inner_left">
+        <h2>공지사항</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">-[기타]22년 VIP 선정 기준 변경 및 추가 기준 관련 </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">-2022년 10월 시스템 점검 안내</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">-개인정보처리방침 개정 안내 (10/5 字 시행)</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:void(0)">	
+                        -[센텀시티] 백화점 휴점에 따른 극장 이용 안내
+                        </a>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="notice-more">
+            <span class="material-icons">add_circle</span>
+        </a>
+    </div>
+    <div class="inner_right">
+        <h2>특별관</h2>
+        <div class="toggle-promotion">
+            <div class="material-icons">upload</div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- 극장 -->
+<section class="promotion">
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./img/theater01.png" alt="">
+            <a href="javascript:void(0)" class="t_name">CINE de CHEF</a>
+            <a href="javascript:void(0)" class="t_txt">#쉐프가 있는 영화관</a>
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/theater02.png" alt="">
+            <a href="javascript:void(0)" class="t_name">4DX</a>
+            <a href="javascript:void(0)" class="t_txt">#모션시트 #오감체험</a>
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/theater03.png" alt="">
+            <a href="javascript:void(0)" class="t_name">CINE & LIVINGROOM</a>
+            <a href="javascript:void(0)" class="t_txt">#신개념 소셜 상영관</a>
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/theater04.png" alt="">
+            <a href="javascript:void(0)" class="t_name">SUITE CINEMA</a>
+            <a href="javascript:void(0)" class="t_txt">#호텔 컨셉의 프리미엄관</a>
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+        </div>
+    </div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</section>
+<!-- 식음료 -->
+<section class="season-product scroll-spy">
+<div class="inner">
+    
+    <img src="./img/popcorn (2).png" alt="" class="floating1">
+    <img src="./img/popcorn (3).png" alt="" class="floating2">
+    <img src="./img/food02.png" alt="" class="food back-to-position to-right delay-1">
+    <div class="text-group">
+        <h3 class="title back-to-position to-left delay-1">CGV 콤보</h3>
+        <p class="description back-to-position to-left delay-2">팝콘(L)1+탄산음료(M)2</p>
+        <div class="more">
+                <a href="javascript:void(0)" class="btn">더보기</a>
+        </div>
+    </div>
+</div>
+</section>
+<!-- 영화관람권 -->
+<section class="ticket scroll-spy">
+    <div class="inner">
+        <img src="./icons/Asset 1@2x.png" alt="logo" class="ticket-logo back-to-position to-right delay-1">
+        <div class="text-group">
+            <h3 class="title  back-to-position to-right delay-2">영화관람권</h3>
+            <p class="description  back-to-position to-right delay-2">CGV 골드클래스</p>
+            <div class="more">
+                <a href="javascript:void(0)" class="btn  back-to-position to-right delay-3">더보기</a>
+            </div>
+        </div>
+        <img src="./img/ticket02.png" alt="" class="product  back-to-position to-left delay-2">
+    </div>
+
+</section>
+<section class="event">
+    <h3>EVENT</h3>
+    <div class="inner">
+     
+        <div class="img_event">
+            <img src="./img/event03.jpg" alt="">
+            <h3 class="title">[한산: 용의출현]라스트 특가</h3>
+            <p class="description">2022.08.22~2022.12.30</p>
+        </div>
+        <div class="img_event">
+            <img src="./img/event01.jpg" alt="">
+            <h3 class="title">VIP가 쏘는 영화 쿠폰팩! [땡스VIP데이]</h3>
+            <p class="description">
+                2022.09.07~2022.11.19</p>
+        </div>
+        <div class="img_event">
+            <img src="./img/event02.jpg" alt="">
+            <h3 class="title">CGV특별관,특별한 재개봉</h3>
+            <p class="description">2022.09.01~2022.11.30</p>
+        </div>
+    </div>
+
+</section>
+<section class="customer">
+    <div class="inner">
+        <h3 class="customer_title">고객센터</h3>
+    <div class="medal">
+        <div class="front">
+            <img src="./img/front.png" alt="">
+        </div>
+        <div class="back">
+            <img src="./img/back.png" alt="">
+            <a href="javascript:void(0)"  class="btn">문의하기</a>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- 계열사 -->
+<section>
+    <div class="footer_banner">
+        <img src="./img/banner.png" alt="">
+    </div>
+</section>
+
+<section class="awards">
+<div class="inner">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./icons/cj01.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj02.png" alt="" id="olive">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj03.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj04.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj05.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./icons/cj06.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev">
+        <span class="material-icons">arrow_back</span>
+    </div>
+    <div class="swiper-button-next">
+        <span class="material-icons">arrow_forward</span>
+    </div>
+</div>
+</section>
+</main>
+
+
+
+<!-- 푸터영역 -->
+<footer>
+<div class="inner">
+    <ul class="menu">
+        <li><a href="javascript:void(0)" class="orange">(주)빙그레</a></li>
+        <li><a href="javascript:void(0)">회사소개</a></li>
+        <li><a href="javascript:void(0)">IR</a></li>
+        <li><a href="javascript:void(0)">채용정보</a></li>
+        <li><a href="javascript:void(0)">광고/제휴/출점문의</a></li>
+        <li><a href="javascript:void(0)">이용약관</a></li>
+        <li><a href="javascript:void(0)">편성기준</a></li>
+        <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">법적고지</a></li>
+        <li><a href="javascript:void(0)">이메일주소무단수집거부</a></li>
+        <li><a href="javascript:void(0)">윤리경영</a></li>
+        <li><a href="javascript:void(0)">사이버감사실</a></li>
+    </ul>
+<div class="footer_b">
+    <address>
+(04377) 서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)
+<br>대표이사 : 허민회<br>
+사업자등록번호 : 104-81-45690>
+통신판매업신고번호 : 2017-서울용산-0662<br>
+호스팅사업자
+CJ올리브네트웍스
+개인정보보호 책임자
+심준범<br>
+대표이메일
+cjcgvmaster@cj.net<br>
+© CJ CGV. All Rights Reserved
+    </address><a href="javascript:void(0)">
+    <img src="./img/logo.png" alt="">
+</a>    
+</div>
+</div>
+
+</footer>
+</body>
+</html>

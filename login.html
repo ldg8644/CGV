@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV cultureplex</title>
+ 
+    <link rel="icon" href="./icons/favicon.ico">
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+    <!-- 구글 아이콘 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+        
+
+
+      <!-- 벤더프리픽스 -->
+      <script src="./script/prefixfree.min.js"></script>
+   
+      <!-- 메인 javascript -->
+      <script defer src="./script/main.js"></script>
+      <!-- 제이쿼리 라이브러리 -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="./script/slick.js"></script>
+      <!-- 랩퍼 -->
+
+      <style>
+        h2>img{
+            width: 150px;
+        position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }        
+        .inner{
+            position: relative;
+            top:50px;
+            width: 356px;
+            margin: 0px auto;
+        }
+.login{
+    position: absolute;
+    top: 100px;
+width: 350px;
+height: 45px;
+background-color: #ccc;
+color:#fff;
+border: 1px solid #333;
+display: block;
+text-indent: 5px;
+}
+.pw{
+    text-indent: 5px;
+    position: absolute;
+    top: 153px;
+width: 350px;
+height: 45px;
+background-color: #ccc;
+color: #fff;
+border: 1px solid #333;
+display: block;
+}
+
+.log_btn{
+    position: absolute;
+    top: 249px;
+    left: 50%;
+    transform: translateX(-50%);
+width: 360px;
+height: 55px;
+background-color: #ED3124;
+color: #fff;
+border: 1px solid #ed3124;
+font-size: 20px;
+display: block;
+
+
+}
+.wrap_login{
+    width: 100%;
+
+
+}
+.more{
+    position: relative;
+    top: 320px;
+
+    font-size: 13px;
+
+}
+
+.more a{
+    text-decoration: none;
+    color: #333;
+}
+.more a::after{
+    content:"";
+    width: 1px;
+    height: 13px;
+    background-color: #333;
+    color: #333;
+    position: absolute;
+    top: 1px;
+    
+
+}
+.more a:last-child::after{
+    display: none;
+}
+
+    </style>
+      <script>
+        $(document).ready(function(){
+
+
+            $('.contents').hide();
+
+          
+            $('.main-menu').mouseenter(function(){
+             $('.contents').stop().slideDown(280);
+
+
+      
+            });
+
+        $('.main-menu').mouseleave(function(){
+            $('.contents').stop().slideUp();
+
+
+        });
+        $('.contents').mouseenter(function(){
+            $(this).stop().show();
+        })
+        $('.contents').mouseleave(function(){
+            $(this).slideUp();
+        })
+
+        $('.m_slide').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5
+    });
+   
+   
+
+
+  });
+  
+
+       
+      </script>
+
+
+
+<body>
+    <?include 'header.php'?>
+    <main>
+<section class="wrap_login">
+<div class="inner">
+   <h2><img src="./img/logo.png" alt=""></h2>
+   <input type="text" placeholder="이메일주소 혹은 ID" class="login">
+   <input type="password" name="" id="" placeholder="비밀번호" class="pw">
+   <input type="submit" id="" value="로그인" class="log_btn">
+<div class="more">
+   <a href="#">비밀번호 찾기&nbsp;</a>
+   <a href="#"> &nbsp;ID찾기 </a>
+   <a href="#"> &nbsp;회원가입 </a>
+</div>
+</div>
+
+</section>
+    </main>
+
+    <?include 'footer.php'?>
+  
