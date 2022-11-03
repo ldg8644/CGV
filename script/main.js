@@ -119,3 +119,37 @@ spyEls.forEach(function(spyEl){
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
 })
+
+// top button
+
+const toTopEl = document.querySelector('#to-top');
+const toTopEl2 = document.querySelector('#reserve')
+window.addEventListener('scroll', function (){
+    console.log(window.scrollY);
+    if(window.scrollY > 500){
+        gsap.to(toTopEl2, .6, {
+            opacity:1,
+            x:0
+        });
+        gsap.to(toTopEl, .6, {
+            opacity:1,
+            x:0
+        });
+       
+    }else{
+        gsap.to(toTopEl2, .6, {
+            opacity:0,
+            x:140
+        })
+        gsap.to(toTopEl, .6, {
+            opacity:0,
+            x:100
+        })
+    }
+   
+    })
+    toTopEl.addEventListener('click',function(){
+        gsap.to(window, .6, {
+            scrollTo: 0
+        })
+});
